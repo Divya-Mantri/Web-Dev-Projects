@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="player0">
+        <div class="player-btn" id="player0-btn">
+            <input type="button" value="Player O">
+        </div>
+        <div class="player0-img"></div>
+    </section>
+    <section id="game">
+        <div class="container">
+            <header>
+                <h1>Tic Tac Toe</h1>
+            </header>
+            <main>
+                <div id="grid">
+                    <div class="box" id="0"></div>
+                    <div class="box" id="1"></div>
+                    <div class="box" id="2"></div>
+                    <div class="box" id="3"></div>
+                    <div class="box" id="4"></div>
+                    <div class="box" id="5"></div>
+                    <div class="box" id="6"></div>
+                    <div class="box" id="7"></div>
+                    <div class="box" id="8"></div>
+                </div>
+                <div id="restart-btn">
+                    <!-- <input type="button" value="Restart Game"> -->
+                    <button type="reset" id="restart">Restart Game</button>
+                </div>
+            </main>
+            <footer>
+                <p id="winning_message">Winner is : </p>
+            </footer>
+        </div>
+    </section>
+    <section id="playerx">
+        <div class="player-btn" id="playerx-btn">
+            <input type="button" value="Player X">
+        </div>
+        <div class="playerx-img"></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

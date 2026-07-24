@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body
+{
+    font-family: 'Arial', Helvetica, sans-serif;
+    background: linear-gradient(to right,rgba(128, 0, 128, 0.604),rgba(0, 0, 255, 0.57));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.player-btn input
+{
+    color: white;
+    background-color: rgb(8, 68, 8);
+    border: none;
+    padding: .5rem;
+    min-width:10px;
+    width:100px;
+    border-radius: .3rem;
+    font-size: medium;   
+    transition: background-color 0.5s ease-in;
+}
+
+.player-btn input:hover
+{
+    background-color: green;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 3px inset rgb(8, 68, 8) ;
+}
+
+.container
+{
+    background-color: beige;
+    padding: 2rem;
+    border-radius: .3rem;
+    height: 80vh;
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+h1
+{
+    text-align: center;
+    padding-bottom: .5rem;
+}
+#grid
+{
+    display: grid;
+    grid-template-columns:repeat(3,minmax(50px,100px));
+    grid-template-rows: repeat(3,minmax(50px,100px));
+    gap: 5px;
+}
+.box
+{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: .5rem;
+    text-align: center;
+    align-content:center;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease-in;
+}
+.box:hover
+{
+    cursor: pointer;
+    background-color:rgba(250, 235, 215, 0.192);
+}
+#restart-btn button
+{
+    padding: .5rem;
+    background-color: rgb(8, 68, 8);
+    color: whitesmoke;
+    font-size: medium;
+    border-radius: .3rem;
+    border: none;
+    align-content: center;
+}
+
+#restart-btn button:hover
+{
+    background-color: green;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 3px inset rgb(8, 68, 8) ;
+    transform: scale(1.1);
+}
+
+footer p
+{
+    padding: 1rem;
+    text-align: center;
+}
