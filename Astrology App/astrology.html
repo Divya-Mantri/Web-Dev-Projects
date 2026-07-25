@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astorology</title>
+    <link rel="stylesheet" href="./astrology.css">
+</head>
+<body>
+    <main>
+        <h1>Astrology Insights</h1>
+        <section>
+        <form action="" id="form">
+
+            <label for="fname">First Name:</label>
+            <input type="text"  id="fname" placeholder="Enter your first name" name="firstName" minlength="3" required>
+            <label for="lname">Surname:</label>
+            <input type="text" id="lname" placeholder="Enter your last name" name="lastName" minlength="3" required>
+            <label for="DOB">Date of Birth (Day):</label>
+            <input type="number" name="date" id="DOB" min="1" max="31" required>
+            <label for="month">Month</label>
+            <input type="number" name="month" id="month" min="1" max="12" required>
+            <label for="year">Year:</label>
+            <input type="number" name="year" id="year" min="1900" max="2026" title="Enter the valid year.." required>
+            <input type="submit" value="Get Insights" id="btn">
+            <p id="result">..........</p>
+        </form>
+    </section>
+    </main>
+   
+    <script src="./astrology.js"></script>
+</body>
+</html>
