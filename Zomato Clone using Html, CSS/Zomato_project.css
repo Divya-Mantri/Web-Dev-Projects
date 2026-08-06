@@ -1,0 +1,232 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /* outline: 2px solid red; */
+}
+body
+{
+    background-color:white;
+}
+.card:hover
+{
+    background-color: white;
+    border-color: white;
+}
+.card
+{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 20px solid rgb(253,243,243);
+    border-radius: 10px;
+}
+
+.box
+{
+    display: inline-block;
+}
+.image img
+{
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+}
+.image
+{
+    position: relative;
+}
+.off
+{
+    font-size: 15px;
+    color: white;
+    background-color: rgba(218,43,16,0.6);
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.Restaurant
+{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.restaurant-name
+{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.rating
+{
+    background-color: green;
+    height: 20px;
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+    color: white;
+    border-radius: 8px;
+}
+.location,.food
+{
+    position: relative;
+}
+.distance,.price
+{
+    position: absolute;
+    right: 5px;
+}
+.food,.place
+{
+    font-size: 15px;
+    color: rgb(88, 88, 88);
+}
+.distance
+{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.first
+{
+    margin-bottom: 50px;
+} 
+.head
+{
+    padding-left: 200px;
+}
+
+.brand
+{
+    color: rgb(175, 15, 15);
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 50px;
+}
+.searching
+{
+    width: 300px;
+    margin-right: 50px;
+    position:relative;
+    bottom: 13px;
+    height: 30px;
+    padding: 1rem;
+}
+.first_logHandles
+{
+    height: 50px;
+    width: 80px;
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+    margin-right: 50px;
+    background-color: white;
+    border: none;
+    color: rgb(101, 97, 97);
+}
+.img1
+{
+    height: 70px;
+    width: 70px;
+}
+.dine,.deliver,.night
+{
+    position: relative;
+    bottom: 22px;
+    left: 5px;
+    font-size: 20px;
+    color: rgb(98,93,93);
+}
+.delivery
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.second
+{
+    position: sticky;
+    top: 0px;
+}
+.third
+{
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding-left: 200px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.third h2
+{
+    font-size:xx-large;
+}
+.third p
+{
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#collectionCards
+{
+    padding-right: 200px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.collectionImg img
+{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.collectionName,.collectionPlaces
+{
+    position: absolute;
+    color: white;
+    padding-left: 10px;
+    z-index: 100;
+}
+.collectionPlaces
+{
+    bottom: 5px;
+}
+.collectionName
+{
+    bottom: 30px;
+}
+.dining
+{
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+.btns
+{
+    /* width: 50%; */
+    display: flex;
+    align-items: center; 
+    position: sticky; 
+    top: 0px;
+    background-color: whitesmoke;
+    padding: 1rem;
+    z-index: 1;
+    gap: 1.5rem;
+
+}
+.btn 
+{
+    color: rgba(0,0,0,0.6);
+    border: 2px solid  rgba(0,0,0,0.2);
+    font-size: medium;
+    padding: .8rem;
+    border-radius: 5px;
+}
+.btn:hover
+{
+    color: rgba(0,0,0);
+    cursor: pointer;
+}
