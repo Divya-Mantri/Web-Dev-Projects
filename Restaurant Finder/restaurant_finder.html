@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./restaurant_finder.css">
+</head>
+<body>
+    
+    <header>
+        <div id="btns">
+            <button id="Filters" class="btn">Filters</button>
+            <button id="Offers" class="btn">Offers</button>
+            <button id="Rating" class="btn">Rating 4.5+</button>
+            <button id="Alcohol" class="btn">Serves Alcohol</button>
+            <button id="Open" class="btn">Open Now</button>
+        </div>
+    </header>
+    
+    <!-- Inserting all the cards here -->
+    
+    <div id="root">
+        
+    </div>
+
+    <div id="filterPopup" class="hidden">
+        <h3>Choose Filter</h3>
+        <div class="filterOption">
+            <input type="radio" id="sortByRating" name="filterOption" value="rating">
+            <label for="sortByRating">Sort By Rating</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" name="filterOption" id="sortHightToLow" value="highLow">
+            <label for="sortHightToLow">High to Low (Price)</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" name="filterOption" id="costOption" value="costLowHigh">
+            <label for="costOption">Cost: Low to High</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" name="filterOption" id="distanceOption" value="distance">
+            <label for="distanceOption">Distance</label>
+        </div>
+        <button id="applyFilter">Apply</button>
+        <button id="closeFilter">Close</button>
+    </div> 
+    
+    <script src="./restaurant_finder.js"></script>
+</body>
+</html>
